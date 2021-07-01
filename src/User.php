@@ -26,11 +26,7 @@ class User extends BaseUser
         return $this->accessToken;
     }
 
-    public function getRole(){
+    public function getRoles(){
         return $this->role;
-    }
-
-    public function getPermission(){
-        return $this->permission;
     }
 }
