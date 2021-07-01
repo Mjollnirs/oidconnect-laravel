@@ -21,6 +21,7 @@ class OIDConnectSocialiteProvider extends AbstractProvider implements ProviderIn
         'openid',
         'profile',
         'email',
+        'roles'
     ];
 
     /**
@@ -111,7 +112,6 @@ class OIDConnectSocialiteProvider extends AbstractProvider implements ProviderIn
             'name' => $user['name'],
             'email' => $user['email'],
             'role' => $user['role'],
-            'permission' => $user['permission'],
         ]);
     }
 
@@ -136,7 +136,6 @@ class OIDConnectSocialiteProvider extends AbstractProvider implements ProviderIn
             'name' => $claims['name'],
             'email' => $claims['email'],
             'role' => $claims['role'],
-            'permission' => $claims['permission'],
         ];
     }
 
